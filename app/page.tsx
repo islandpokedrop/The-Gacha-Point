@@ -45,10 +45,10 @@ export default function Page() {
       key={i}
       className="absolute text-cyan-400 opacity-30"
       style={{
-        left: `${Math.random() * 100}%`,
-        animation: `rain ${2 + Math.random() * 4}s linear infinite`,
-        animationDelay: `${Math.random() * 5}s`,
-        fontSize: `${10 + Math.random() * 10}px`,
+        left: `${i * 2.5}%`,
+        animation: "rain 4s linear infinite",
+        animationDelay: `${i * 0.1}s`,
+        fontSize: "12px",
       }}
     >
       |
