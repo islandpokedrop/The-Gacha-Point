@@ -55,11 +55,6 @@ export default function Page() {
     </div>
   ))}
 </div>
-<div className="absolute top-32 left-0 w-52 h-14 border border-cyan-400/50 rounded-lg bg-cyan-500/5 backdrop-blur-sm rotate-[-8deg]" />
-
-<div className="absolute top-56 right-0 w-60 h-14 border border-fuchsia-500/50 rounded-lg bg-fuchsia-500/5 backdrop-blur-sm rotate-[8deg]" />
-
-<div className="absolute bottom-40 left-10 w-44 h-12 border border-cyan-400/50 rounded-lg bg-cyan-500/5 backdrop-blur-sm rotate-[6deg]" />
 <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
 
 <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-fuchsia-500 rounded-full animate-pulse" />
