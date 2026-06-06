@@ -1,48 +1,109 @@
 "use client";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
-      <section className="relative flex flex-col items-center justify-center text-center px-6 py-28">
-        <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-900/50 via-black to-cyan-900/40" />
+      <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
+       <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-950 via-black to-cyan-950" />
+<div
+  className="absolute inset-0 opacity-10"
+  style={{
+    backgroundImage:
+      "linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)",
+    backgroundSize: "50px 50px",
+  }}
+/>
+<div className="absolute top-10 left-10 w-96 h-96 bg-fuchsia-500/20 blur-[150px] rounded-full animate-pulse" />
 
+<div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/20 blur-[150px] rounded-full animate-pulse" />
+
+<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/10 blur-[180px] rounded-full" />
+
+<div className="absolute inset-0 opacity-40 pointer-events-none">
+  <div className="absolute top-24 left-20 text-fuchsia-500 text-6xl font-bold rotate-[-10deg] drop-shadow-[0_0_25px_rgba(217,70,239,1)] animate-pulse">
+    東京
+  </div>
+
+  <div className="absolute top-40 right-24 text-cyan-400 text-5xl font-bold rotate-[8deg] drop-shadow-[0_0_25px_rgba(34,211,238,1)] animate-pulse">
+    ガチャ
+  </div>
+
+  <div className="absolute bottom-32 left-1/4 text-fuchsia-400 text-4xl font-bold drop-shadow-[0_0_25px_rgba(217,70,239,1)] animate-pulse">
+    アニメ
+  </div>
+
+  <div className="absolute bottom-24 right-1/4 text-cyan-300 text-5xl font-bold drop-shadow-[0_0_25px_rgba(34,211,238,1)] animate-pulse">
+    ポケモン
+  </div>
+</div>
+<div className="absolute top-32 left-0 w-52 h-14 border border-cyan-400/50 rounded-lg bg-cyan-500/5 backdrop-blur-sm rotate-[-8deg]" />
+
+<div className="absolute top-56 right-0 w-60 h-14 border border-fuchsia-500/50 rounded-lg bg-fuchsia-500/5 backdrop-blur-sm rotate-[8deg]" />
+
+<div className="absolute bottom-40 left-10 w-44 h-12 border border-cyan-400/50 rounded-lg bg-cyan-500/5 backdrop-blur-sm rotate-[6deg]" />
+<div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
+
+<div className="absolute top-1/3 right-1/4 w-3 h-3 bg-fuchsia-500 rounded-full animate-pulse" />
+
+<div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-cyan-300 rounded-full animate-ping" />
+
+<div className="absolute bottom-1/3 right-1/3 w-4 h-4 bg-fuchsia-400 rounded-full animate-pulse" />
+
+<div className="absolute top-1/2 left-20 w-2 h-2 bg-white rounded-full animate-ping" />
+
+<div className="absolute top-20 right-32 w-2 h-2 bg-cyan-300 rounded-full animate-pulse" />
+
+<div className="absolute bottom-24 left-24 w-2 h-2 bg-fuchsia-300 rounded-full animate-pulse" />
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="relative z-10 max-w-5xl"
         >
+          <motion.div
+  animate={{ y: [0, -10, 0] }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <Image
+    src="/logo.png"
+    alt="The Gacha Point Logo"
+    width={700}
+    height={700}
+    priority
+    className="mx-auto mb-6 drop-shadow-[0_0_40px_rgba(217,70,239,0.8)]"
+  />
+</motion.div>
           <p className="uppercase tracking-[0.4em] text-cyan-400 text-sm mb-4">
-            Cards • Capsules • Collectibles
-          </p>
+  🇯🇵 Akihabara Inspired • Malta Based • Collectibles Culture
+</p>
 
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-6 text-fuchsia-400 drop-shadow-[0_0_30px_rgba(217,70,239,0.9)]">
-            THE GACHA POINT
-          </h1>
-
-          <p className="text-xl md:text-3xl text-gray-300 mb-4">
-            Malta's Future Home For Cards, Capsules & Collectibles
-          </p>
-
-          <p className="text-cyan-400 text-xl font-semibold mb-10">
-            Your Next Rare Pull Is Waiting.
-          </p>
+          
+<div className="mt-4 inline-block px-4 py-2 border border-cyan-400 rounded-lg bg-cyan-500/10 text-cyan-300 text-sm tracking-widest">
+  秋葉原 STYLE • MALTA EDITION
+</div>
+          <p className="text-cyan-400 text-xl font-semibold mb-10 animate-pulse">
+  ✨ Your Next Rare Pull Is Waiting ✨
+</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
               className="px-8 py-4 rounded-2xl bg-fuchsia-500 hover:bg-fuchsia-400 transition font-semibold"
             >
-              Join The Journey
+              🎴 Join The Adventure
             </a>
 
             <a
               href="#about"
               className="px-8 py-4 rounded-2xl border border-cyan-500/40 hover:border-cyan-300 transition"
             >
-              Discover More
+              ⚡ Explore The World
             </a>
           </div>
         </motion.div>
@@ -50,7 +111,7 @@ export default function Page() {
 
       <section id="about" className="px-6 py-20 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-fuchsia-500/10 rounded-3xl p-8 border border-fuchsia-500/30">
+          <div className="bg-fuchsia-500/10 rounded-3xl p-8 border border-fuchsia-500/30 hover:scale-105 hover:shadow-[0_0_30px_rgba(217,70,239,0.6)] transition-all duration-300">
             <h2 className="text-2xl font-bold mb-4">🎴 Pokémon & TCG</h2>
             <p className="text-gray-300">
               English booster packs, sealed products and future trading card game releases.
@@ -107,6 +168,29 @@ export default function Page() {
           </div>
         </div>
       </section>
+<section className="py-20 text-center">
+  <h2 className="text-4xl font-bold text-fuchsia-400 mb-12">
+    Featured Universes
+  </h2>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    <div className="px-6 py-3 rounded-full border border-yellow-400 text-yellow-300">
+      ⚡ Pokémon
+    </div>
+
+    <div className="px-6 py-3 rounded-full border border-cyan-400 text-cyan-300">
+      🏴‍☠️ One Piece
+    </div>
+
+    <div className="px-6 py-3 rounded-full border border-fuchsia-400 text-fuchsia-300">
+      🐉 Dragon Ball
+    </div>
+
+    <div className="px-6 py-3 rounded-full border border-green-400 text-green-300">
+      🥷 Naruto
+    </div>
+  </div>
+</section>
 
       <section className="px-6 py-20">
         <div className="max-w-5xl mx-auto text-center">
@@ -135,6 +219,11 @@ export default function Page() {
           </div>
         </div>
       </section>
+<section className="py-10 text-center">
+  <div className="inline-block px-6 py-3 rounded-full bg-fuchsia-500/20 border border-fuchsia-500 text-fuchsia-300 animate-pulse">
+    🚀 FIRST MACHINE OPENING SOON IN MALTA
+  </div>
+</section>
 
       <section id="contact" className="px-6 py-24 text-center">
   <div className="max-w-2xl mx-auto">
@@ -193,6 +282,17 @@ export default function Page() {
     </div>
   </div>
 </section>
-    </div>
+
+<footer className="border-t border-fuchsia-500/20 py-8 text-center text-gray-500">
+  <p className="text-fuchsia-400">
+    © 2026 The Gacha Point • Malta
+  </p>
+
+  <p className="mt-2 text-sm">
+    🎴 Pokémon • 🎁 Gacha • ✨ Collectibles
+  </p>
+</footer>
+
+</div>
   );
 }
