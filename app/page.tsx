@@ -137,32 +137,62 @@ export default function Page() {
       </section>
 
       <section id="contact" className="px-6 py-24 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-fuchsia-400">
-            Business Enquiries
-          </h2>
+  <div className="max-w-2xl mx-auto">
+    <h2 className="text-4xl font-bold mb-6 text-fuchsia-400">
+      Business Enquiries
+    </h2>
 
-          <p className="text-gray-300 mb-8 text-lg">
-            Interested in hosting a machine, partnering with us or learning more?
-          </p>
+    <p className="text-gray-300 mb-8 text-lg">
+      Interested in hosting a machine, partnering with us or learning more?
+    </p>
 
-          <a
-            href="mailto:islandpokedrop@gmail.com"
-            className="inline-block px-8 py-4 rounded-2xl bg-fuchsia-500 hover:bg-fuchsia-400 transition font-semibold"
-          >
-            Contact Us
-          </a>
+    <form
+      action="https://formspree.io/f/meewedkj"
+      method="POST"
+      className="flex flex-col gap-4"
+    >
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        className="px-5 py-4 rounded-2xl bg-white/10 border border-fuchsia-500 text-white"
+      />
 
-          <p className="text-gray-400 mt-6">
-            islandpokedrop@gmail.com
-          </p>
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        className="px-5 py-4 rounded-2xl bg-white/10 border border-fuchsia-500 text-white"
+      />
 
-          <div className="flex justify-center gap-6 text-gray-400 text-sm mt-10">
-            <span>Instagram (Coming Soon)</span>
-            <span>TikTok (Coming Soon)</span>
-          </div>
-        </div>
-      </section>
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+        rows={5}
+        className="px-5 py-4 rounded-2xl bg-white/10 border border-fuchsia-500 text-white"
+      />
+
+      <button
+        type="submit"
+        className="px-8 py-4 rounded-2xl bg-fuchsia-500 hover:bg-fuchsia-400 transition font-semibold"
+      >
+        Send Message 🚀
+      </button>
+    </form>
+
+    <p className="text-gray-400 mt-8">
+      islandpokedrop@gmail.com
+    </p>
+
+    <div className="flex justify-center gap-6 text-gray-400 text-sm mt-6">
+      <span>Instagram (Coming Soon)</span>
+      <span>TikTok (Coming Soon)</span>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
