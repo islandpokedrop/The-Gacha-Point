@@ -38,6 +38,23 @@ export default function Page() {
     ポケモン
   </div>
 </div>
+{/* Cyberpunk Rain */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+  {[...Array(80)].map((_, i) => (
+    <div
+      key={i}
+      className="absolute text-cyan-400 opacity-30"
+      style={{
+        left: `${Math.random() * 100}%`,
+        animation: `rain ${2 + Math.random() * 4}s linear infinite`,
+        animationDelay: `${Math.random() * 5}s`,
+        fontSize: `${10 + Math.random() * 10}px`,
+      }}
+    >
+      |
+    </div>
+  ))}
+</div>
 <div className="absolute top-32 left-0 w-52 h-14 border border-cyan-400/50 rounded-lg bg-cyan-500/5 backdrop-blur-sm rotate-[-8deg]" />
 
 <div className="absolute top-56 right-0 w-60 h-14 border border-fuchsia-500/50 rounded-lg bg-fuchsia-500/5 backdrop-blur-sm rotate-[8deg]" />
