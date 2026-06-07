@@ -6,7 +6,16 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
-       <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-950 via-black to-cyan-950" />
+        <Image
+  src="/Buildings.png"
+  alt="Akihabara Buildings"
+  fill
+  priority
+  className="object-cover absolute inset-0 opacity-100"
+/>
+
+<div className="absolute inset-0 bg-gradient-to-br from-fuchsia-950/40 via-black/20 to-cyan-950/40" />
+
 <div
   className="absolute inset-0 opacity-10"
   style={{
@@ -15,6 +24,8 @@ export default function Page() {
     backgroundSize: "50px 50px",
   }}
 />
+
+<div className="absolute inset-0 bg-black/50" />
 <div className="absolute top-10 left-10 w-96 h-96 bg-fuchsia-500/20 blur-[150px] rounded-full animate-pulse" />
 
 <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/20 blur-[150px] rounded-full animate-pulse" />
