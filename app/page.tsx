@@ -7,7 +7,7 @@ export default function Page() {
     <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
         <Image
-  src="/Buildings.png"
+  src="/buildings.png"
   alt="Akihabara Buildings"
   fill
   priority
