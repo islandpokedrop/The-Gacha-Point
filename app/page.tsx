@@ -212,14 +212,14 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="bg-cyan-500/10 rounded-3xl p-8 border border-cyan-500/30">
+          <div className="bg-cyan-500/10 rounded-3xl p-8 border border-cyan-500/30 hover:scale-105 hover:shadow-[0_0_30px_rgba(217,70,239,0.6)] transition-all duration-300">
             <h2 className="text-2xl font-bold mb-4">🎁 Gacha Experience</h2>
             <p className="text-gray-300">
               Inspired by Japanese capsule culture and surprise collectible experiences.
             </p>
           </div>
 
-          <div className="bg-fuchsia-500/10 rounded-3xl p-8 border border-fuchsia-500/30">
+          <div className="bg-fuchsia-500/10 rounded-3xl p-8 border border-fuchsia-500/30 hover:scale-105 hover:shadow-[0_0_30px_rgba(217,70,239,0.6)] transition-all duration-300">
             <h2 className="text-2xl font-bold mb-4"> Built For Malta</h2>
             <p className="text-gray-300">
               A modern concept designed for collectors, tourists, anime fans and TCG enthusiasts.
