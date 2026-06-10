@@ -36,7 +36,76 @@ export default function Page() {
   <div className="absolute top-24 left-20 text-fuchsia-500 text-6xl font-bold rotate-[-10deg] drop-shadow-[0_0_25px_rgba(217,70,239,1)] animate-pulse">
     東京
   </div>
+{/* Floating Neon Signs */}
 
+<motion.div
+  animate={{
+  y: [0, 20, 0],
+  opacity: [1, 0.5, 1],
+}}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="absolute top-32 left-16 z-10"
+>
+  <div className="px-6 py-3 rounded-xl border border-fuchsia-500 bg-black/40 backdrop-blur-md text-fuchsia-400 text-xl font-bold shadow-[0_0_25px_rgba(217,70,239,1)]">
+    ポケモン
+  </div>
+</motion.div>
+
+<motion.div
+  animate={{
+  y: [0, 20, 0],
+  opacity: [1, 0.5, 1],
+}}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="absolute top-52 right-20 z-10"
+>
+  <div className="px-6 py-3 rounded-xl border border-cyan-500 bg-black/40 backdrop-blur-md text-cyan-300 text-xl font-bold shadow-[0_0_25px_rgba(34,211,238,1)]">
+    ガチャ
+  </div>
+</motion.div>
+
+<motion.div
+  animate={{
+  y: [0, 20, 0],
+  opacity: [1, 0.5, 1],
+}}
+  transition={{
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="absolute bottom-40 left-24 z-10"
+>
+  <div className="px-6 py-3 rounded-xl border border-fuchsia-500 bg-black/40 backdrop-blur-md text-fuchsia-300 text-lg font-bold shadow-[0_0_25px_rgba(217,70,239,1)]">
+    TCG
+  </div>
+</motion.div>
+
+<motion.div
+  animate={{
+  y: [0, 20, 0],
+  opacity: [1, 0.5, 1],
+}}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  
+  className="absolute bottom-52 right-24 z-10"
+>
+  <div className="px-6 py-3 rounded-xl border border-fuchsia-500 bg-black/40 backdrop-blur-md text-fuchsia-400 text-xl font-bold shadow-[0_0_25px_rgba(217,70,239,1)] animate-pulse">
+    ANIME
+  </div>
+</motion.div>
   <div className="absolute top-40 right-24 text-cyan-400 text-5xl font-bold rotate-[8deg] drop-shadow-[0_0_25px_rgba(34,211,238,1)] animate-pulse">
     ガチャ
   </div>
@@ -53,17 +122,19 @@ export default function Page() {
 <div className="absolute inset-0 overflow-hidden pointer-events-none">
   {[...Array(80)].map((_, i) => (
     <div
-      key={i}
-      className="absolute text-cyan-400 opacity-30"
-      style={{
-        left: `${i * 2.5}%`,
-        animation: "rain 4s linear infinite",
-        animationDelay: `${i * 0.1}s`,
-        fontSize: "12px",
-      }}
-    >
-      |
-    </div>
+  key={i}
+  className="absolute opacity-50"
+  style={{
+    left: `${i * 2.5}%`,
+    animation: "rain 4s linear infinite",
+    animationDelay: `${i * 0.1}s`,
+    width: "3px",
+    height: "50px",
+    background:
+      "linear-gradient(to bottom, rgba(34,211,238,0), rgba(34,211,238,1), rgba(34,211,238,0))",
+    boxShadow: "0 0 10px rgba(34,211,238,0.8)",
+  }}
+/>
   ))}
 </div>
 <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-ping" />
