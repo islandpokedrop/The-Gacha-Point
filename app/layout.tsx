@@ -12,10 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-title: "The Gacha Point | Pokémon & Collectibles Malta",
-description:
-  "Malta's future home for Pokémon cards, collectibles, mystery pulls and vending machine experiences.",
+export const metadata = {
+  title: "The Gacha Point",
+  description: "Pokémon, TCG and Gacha Culture in Malta",
+
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
