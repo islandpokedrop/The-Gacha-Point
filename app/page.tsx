@@ -383,6 +383,7 @@ export default function Page() {
   </p>
 
   <p className="mt-2 text-sm">
+    
     🎴 Pokémon • 🎁 Gacha • ✨ Collectibles
   </p>
 </footer>
