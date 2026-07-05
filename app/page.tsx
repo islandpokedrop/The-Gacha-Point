@@ -367,7 +367,7 @@ export default function Page() {
     </form>
 
     <p className="text-gray-400 mt-8">
-      islandpokedrop@gmail.com
+      kevinthegachapoint@gmail.com
     </p>
 
     <div className="flex justify-center gap-6 text-gray-400 text-sm mt-6">
